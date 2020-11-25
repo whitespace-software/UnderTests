@@ -1,0 +1,13 @@
+.env
+
+temp
+node_modules/*
+.DS_Store
+dist
+
+*.js.map
+src/**/*.js
+src/*.js
+src/*/*.js
+features/*/*.js
+build

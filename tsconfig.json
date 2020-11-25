@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "build",
+      "sourceMap": true,
+      "target": "es2017",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "experimentalDecorators": true
+    },
+    "compileOnSave": true,
+    "include": [
+      "src",
+      "features"
+    ],
+    "exclude": [
+      "temp"
+    ]
+}

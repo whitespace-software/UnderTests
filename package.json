@@ -1,0 +1,23 @@
+{
+  "name": "undertests",
+  "version": "1.0.0",
+  "description": "Testing the SoVAPI API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp package.json build/package.json && cd build && npm install --only=prod",
+    "test": "tsc && cp ./build/src/*js* ./src && cp ./build/src/helpers/*js* ./src/helpers && cp ./build/features/support/*js* ./features/support && cp ./build/features/world/*js* ./features/world && cucumber-js ./features/*.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitespace-software/UnderTests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitespace-software/UnderTests/issues"
+  },
+  "homepage": "https://github.com/whitespace-software/UnderTests#readme",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0"
+  }
+}
